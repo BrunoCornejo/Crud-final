@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD de productos</h1>
+
+        <form id="productForm">
+
+            <input type="text" id="productName" placeholder="Nombre del producto" required>
+        
+            <input type="number" id="productPrice" placeholder="Precio" required >
+
+            <button type="submit" id="addProductButton">Agregar Producto</button>
+            
+            <button type="button" id="editProductButton" style="display: none;">Editar Producto</button>
+
+        </form>
+
+
+        <table id="productTable">
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="productBody"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
